@@ -1,1 +1,125 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus Links</title>
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1995170708053580');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1995170708053580&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <style>
+    :root {
+      --bg: #0f0f12;
+      --card: #1c1c22;
+      --card-hover: #26262e;
+      --text: #f4f4f5;
+      --muted: #a1a1aa;
+      --accent: #F94B1F;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 56px 20px;
+    }
+    .container {
+      width: 100%;
+      max-width: 480px;
+      text-align: center;
+    }
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      margin: 0 auto 16px;
+      object-fit: cover;
+      border: 2px solid var(--accent);
+    }
+    h1 {
+      font-size: 1.4rem;
+      margin-bottom: 6px;
+    }
+    .bio {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 32px;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .link {
+      display: block;
+      background: var(--card);
+      color: var(--text);
+      text-decoration: none;
+      padding: 16px 20px;
+      border-radius: 14px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: transform .12s ease, background .2s ease;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .link:hover {
+      background: var(--card-hover);
+      transform: translateY(-2px);
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <!-- Troque o src pela sua foto (pode hospedar no próprio repo) -->
+    <img class="avatar" src="https://placehold.co/96x96/F94B1F/fff?text=Logo" alt="Foto de perfil">
+    <h1>Seu Nome</h1>
+    <p class="bio">Sua descrição curta aqui</p>
+
+    <nav class="links">
+      <!-- data-link é usado no tracking de clique -->
+      <a class="link" href="https://exemplo.com/loja"      data-link="Loja"       target="_blank" rel="noopener">🛍️ Minha Loja</a>
+      <a class="link" href="https://instagram.com/voce"    data-link="Instagram"  target="_blank" rel="noopener">📸 Instagram</a>
+      <a class="link" href="https://wa.me/55XXXXXXXXXXX"   data-link="WhatsApp"   target="_blank" rel="noopener">💬 WhatsApp</a>
+      <a class="link" href="https://exemplo.com/site"      data-link="Site"       target="_blank" rel="noopener">🌐 Site Oficial</a>
+    </nav>
+
+    <footer>© 2026 Seu Nome</footer>
+  </main>
+
+  <!-- Tracking de clique: dispara evento customizado por link -->
+  <script>
+    document.querySelectorAll('.link').forEach(function (el) {
+      el.addEventListener('click', function () {
+        if (window.fbq) {
+          fbq('trackCustom', 'ClickLink', { link: el.dataset.link });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
