@@ -3,7 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Caio Rennó — Psicotropical</title>
+
+    <!-- SEO primário -->
+    <title>RENNOAR — Psicotropical | Ouça em todas as plataformas</title>
+    <meta
+      name="description"
+      content="Psicotropical, o EP de estreia de RENNOAR (Caio Rennó): indie psicodélico e bedroom pop com herança musical brasileira, um surrealismo lúcido sobre o cotidiano. Ouça no Spotify, Apple Music, YouTube, Deezer, Amazon Music e Tidal."
+    />
+    <meta
+      name="keywords"
+      content="RENNOAR, Caio Rennó, Psicotropical, álbum, música brasileira, Spotify, Apple Music, Deezer, Tidal, Amazon Music, YouTube"
+    />
+    <meta name="author" content="RENNOAR (Caio Rennó)" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="canonical" href="https://matheus-aalce.github.io/rennoar/" />
+
+    <!-- Open Graph (Facebook, WhatsApp, etc.) -->
+    <meta property="og:type" content="music.album" />
+    <meta property="og:site_name" content="RENNOAR" />
+    <meta
+      property="og:title"
+      content="RENNOAR — Psicotropical | Ouça em todas as plataformas"
+    />
+    <meta
+      property="og:description"
+      content="EP de estreia de RENNOAR (Caio Rennó): indie psicodélico e bedroom pop com herança brasileira, um surrealismo lúcido sobre o cotidiano. Ouça nas principais plataformas."
+    />
+    <meta
+      property="og:url"
+      content="https://matheus-aalce.github.io/rennoar/"
+    />
+    <meta
+      property="og:image"
+      content="https://matheus-aalce.github.io/rennoar/public/rennoar_topo.jpeg"
+    />
+    <meta property="og:image:alt" content="RENNOAR — Psicotropical" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="music:musician" content="RENNOAR" />
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="RENNOAR — Psicotropical | Ouça em todas as plataformas"
+    />
+    <meta
+      name="twitter:description"
+      content="EP de estreia de RENNOAR (Caio Rennó): indie psicodélico e bedroom pop com herança brasileira. Ouça nas principais plataformas."
+    />
+    <meta
+      name="twitter:image"
+      content="https://matheus-aalce.github.io/rennoar/public/rennoar_topo.jpeg"
+    />
+
+    <!-- Dados estruturados para buscadores e LLMs (Schema.org) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MusicAlbum",
+        "name": "Psicotropical",
+        "description": "EP de estreia de RENNOAR (Caio Rennó). Parte de uma nova onda de artistas brasileiros que misturam indie psicodélico e bedroom pop com a herança musical brasileira, traz uma visão cosmológica sobre o cotidiano e a malemolência humana em meio ao caos — um surrealismo lúcido sob a lógica dos fractais.",
+        "genre": ["Indie psicodélico", "Bedroom pop", "MPB"],
+        "byArtist": {
+          "@type": "MusicGroup",
+          "name": "RENNOAR",
+          "alternateName": "Caio Rennó",
+          "description": "Caio Rennó (RENNOAR) é artista e produtor musical brasileiro. Responsável pela produção musical de lançamentos de artistas como Rio-Juá e Keruv, tem histórico de trabalhos com grandes nomes da cena LGBTQIAPN+ como CHAMELEO, Jup do Bairro, Cyberkills e Mia Badgyal.",
+          "jobTitle": ["Músico", "Produtor musical"],
+          "knowsAbout": [
+            "Produção musical",
+            "Indie psicodélico",
+            "Bedroom pop",
+            "MPB"
+          ],
+          "genre": ["Indie psicodélico", "Bedroom pop", "MPB"],
+          "sameAs": [
+            "https://www.instagram.com/caiorenno",
+            "https://www.tiktok.com/@caiorenno"
+          ]
+        },
+        "image": "https://matheus-aalce.github.io/rennoar/public/rennoar_topo.jpeg",
+        "url": "https://matheus-aalce.github.io/rennoar/",
+        "inLanguage": "pt-BR",
+        "albumProductionType": "https://schema.org/StudioAlbum",
+        "albumReleaseType": "https://schema.org/EPRelease",
+        "sameAs": [
+          "https://open.spotify.com/intl-pt/album/7fJDA1frqdTJO3vm0TNOdV",
+          "https://www.youtube.com/playlist?list=OLAK5uy_m4o_sTfjuzElk8KoYnCUSsO6xRc5YacVg",
+          "https://music.apple.com/us/album/psicotropical/1891813184",
+          "https://www.deezer.com/br/album/957357641",
+          "https://music.amazon.com/albums/B0GWKKJQM6",
+          "https://tidal.com/album/514302646"
+        ]
+      }
+    </script>
 
     <!-- Meta Pixel Code -->
     <script>
@@ -70,30 +164,85 @@
         margin: 0 auto 32px;
       }
       h1 {
+        margin-bottom: 8px;
+        text-align: left;
+      }
+      .bio {
+        color: #555555;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        text-align: left;
+        margin-bottom: 16px;
+      }
+      .bio--cta {
+        text-align: center;
+        font-weight: 600;
+        color: #111111;
+        margin-bottom: 20px;
+      }
+      .sobre {
+        text-align: center;
         margin-bottom: 24px;
+      }
+      .sobre > summary {
+        cursor: pointer;
+        list-style: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #777777;
+        padding: 6px 4px;
+        user-select: none;
+      }
+      .sobre > summary::-webkit-details-marker {
+        display: none;
+      }
+      .sobre > summary::after {
+        content: "›";
+        font-size: 1.1rem;
+        line-height: 1;
+        transition: transform 0.2s ease;
+      }
+      .sobre[open] > summary::after {
+        transform: rotate(90deg);
+      }
+      .sobre > summary:hover {
+        color: #111111;
+      }
+      .sobre .bio:first-of-type {
+        margin-top: 12px;
       }
       .links {
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 14px;
       }
       .link {
         display: block;
-        background: #ffffff;
-        color: #111111;
+        background: #111111;
+        color: #ffffff;
         text-decoration: none;
-        padding: 16px 20px;
-        border-radius: 12px;
-        font-weight: 600;
-        font-size: 1rem;
-        border: 1px solid #e5e5e5;
+        padding: 18px 20px;
+        border-radius: 14px;
+        font-weight: 700;
+        font-size: 1.05rem;
+        border: 1px solid #111111;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         transition:
           transform 0.12s ease,
-          background 0.2s ease;
+          background 0.2s ease,
+          box-shadow 0.2s ease;
       }
       .link:hover {
-        background: #f5f5f5;
+        background: #000000;
         transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.16);
+      }
+      .link:focus-visible {
+        outline: 3px solid #f94b1f;
+        outline-offset: 2px;
       }
       footer {
         margin-top: 40px;
@@ -107,12 +256,35 @@
       <img
         class="topo"
         src="public/rennoar_topo.jpeg"
-        alt="Caio Rennó — Psicotropical"
+        alt="Capa do álbum Psicotropical, de RENNOAR (Caio Rennó)"
+        width="480"
+        fetchpriority="high"
       />
 
       <h1>RENNOAR — Psicotropical</h1>
 
-      <nav class="links">
+      <details class="sobre">
+        <summary>Sobre RENNOAR &amp; o EP</summary>
+        <p class="bio">
+          Parte de uma nova onda de artistas brasileiros que misturam indie
+          psicodélico e bedroom pop com a herança musical brasileira, o trabalho
+          de RENNOAR se dá através da compreensão do movimento cotidiano sob a
+          lógica dos fractais. O EP de estreia <strong>Psicotropical</strong>
+          traz uma visão cosmológica sobre o corre do dia a dia e a
+          sensibilidade e malemolência humana em meio ao caos, resultando no
+          surrealismo lúcido que marca as obras.
+        </p>
+        <p class="bio">
+          Responsável pela produção musical dos lançamentos dos artistas
+          Rio-Juá, Keruv e outros, Caio Rennó tem também um histórico de
+          trabalhos com grandes artistas da cena LGBTQIAPN+ como CHAMELEO, Jup
+          do Bairro, Cyberkills e Mia Badgyal.
+        </p>
+      </details>
+
+      <p class="bio bio--cta">Ouça agora nas principais plataformas:</p>
+
+      <nav class="links" aria-label="Plataformas de streaming e redes sociais">
         <a
           class="link"
           href="https://open.spotify.com/intl-pt/album/7fJDA1frqdTJO3vm0TNOdV?si=ef1e7b57f74b43ea"
